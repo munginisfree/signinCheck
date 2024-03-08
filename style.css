@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(156, 181, 236);
+    color: blue;
+}
+
+button{
+    background-color: red;
+}
+
+.hide{
+    display: none;
+}

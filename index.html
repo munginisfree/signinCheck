@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유효성 검사</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <h1>회원가입</h1>
+    <fieldset>
+        <label>ID</label>
+        <input type = "text" id = "username">
+        <div class = "fail-message hide">아이디는 네 글자 이상</div>
+        <div class = "success-message hide">사용 가능한 아이디</div>
+    </fieldset>
+
+    <fieldset>
+        <label>PASSWORD</label>
+        <input type = "password" id = "passcode" class = "pwInput">
+        <div class = "pw-signerror-message">비밀번호는 !@#$%^&* 중 하나 이상의 특수문자를 포함해야함</div>
+    </fieldset>
+
+    <fieldset>
+        <label>CHECK PASSWORD</label>
+        <input type = "password" id = "2ndPasscode" class = "pwInput">
+        <div class = "pw-fail-message hide">비밀번호가 일치하지 않습니다</div>
+    </fieldset>
+
+    <button>SIGN IN</button>
+
+    <script src = "script.js"></script>
+</body>
+</html>
